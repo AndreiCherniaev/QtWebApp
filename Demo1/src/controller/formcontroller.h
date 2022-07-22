@@ -23,7 +23,7 @@ class FormController : public HttpRequestHandler {
 public:
 
     /** Constructor */
-    FormController();
+    FormController(QObject* parent=nullptr);
 
     /** Generates the response */
     void service(HttpRequest& request, HttpResponse& response);
