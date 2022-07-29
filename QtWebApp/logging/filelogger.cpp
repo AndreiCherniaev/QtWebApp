@@ -65,7 +65,7 @@ void FileLogger::refreshSettings()
     }
 
     // Create new file if the filename has been changed
-    if (oldFileName!=fileName)
+    if ((oldFileName!=fileName) && (!oldFileName.isEmpty()))
     {
         fprintf(stderr,"Logging to %s\n",qPrintable(fileName));
         close();
