@@ -5,7 +5,8 @@
 
 #include "formcontroller.h"
 
-FormController::FormController()
+FormController::FormController(QObject* parent)
+    : HttpRequestHandler(parent)
 {}
 
 void FormController::service(HttpRequest& request, HttpResponse& response)
